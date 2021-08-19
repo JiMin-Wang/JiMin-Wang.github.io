@@ -543,7 +543,7 @@
 
         <div class="section-title">
           <h2 style="font-size: 20px;">Portfolio</h2>
-          <h3>Check our <span>Portfolio</span></h3>
+          <!-- <h3>Check our <span>Portfolio</span></h3> -->
           <!-- <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p> -->
         </div>
 
@@ -560,14 +560,14 @@
 
         <!-- <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200"> -->
           <div class="col-lg-4 col-md-6 portfolio-item">
-            <h1>Web Project</h1>
+            <h1>Web Project <span>공공도서시스템</span></h1>
+            <hr>
             <div class="protfolio-box">
-              <img src="assets/img/sylibrary/쌍용도서관_1.png" class="img-fluid" alt="" style="height:417px">
-            <!-- <div class="portfolio-info" style="text-align: center;"> -->
+              <div class="thumbnail-box">
+                <img src="assets/img/sylibrary/쌍용도서관_1.png" class="img-fluid" alt="" style="height:317px">
+              </div>
               <div class="portfolio-content">
                 <ul>
-                  <li><strong>공공도서시스템</strong></li>
-                  <br>
                   <li>
                     <div style="display: flex;">
                       <div class="portfolio-title-sub"><strong>주요기능</strong></div>
@@ -589,30 +589,28 @@
                       <div class="portfolio-title-sub"><strong>Back-end</strong></div>
                       <ul style="list-style:none; width:500px; padding-left: 20px;">
                         <li>Java, SQL 언어와 Eclipse, Oracle RDBMS, SQL-Developer, eXERD 툴을 사용하였습니다.</li>
-                    </div>
-                    <li>
-                      <div style="display: flex;">
-                        <div class="portfolio-title-sub"><strong>특이사항</strong></div>
-                        <ul style="list-style:none; width:500px; padding-left: 20px;">
-                          <li>포트포워딩작업을 하여 팀원들이 PC DB에 접속할 수 있도록 지원했습니다.</li>
-                          <li>OpenAPI를 사용하여, 책 관련 데이터 확보했습니다.</li>
-                          <li>MVC모델 형태 전체적인 코드를 구현했습니다.</li>
-                          <li>게시판, Modal, HightChart 등 다양한 기능을 구현했습니다.</li>
-                      </div>
                       </ul>
-                    </li>
-                    </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div style="display: flex;">
+                      <div class="portfolio-title-sub"><strong>특이사항</strong></div>
+                      <ul style="list-style:none; width:500px; padding-left: 20px;">
+                        <li>포트포워딩작업을 하여 팀원들이 PC DB에 접속할 수 있도록 지원했습니다.</li>
+                        <li>OpenAPI를 사용하여, 책 관련 데이터 확보했습니다.</li>
+                        <li>MVC모델 형태 전체적인 코드를 구현했습니다.</li>
+                        <li>게시판, Modal, HightChart 등 다양한 기능을 구현했습니다.</li>
+                      </ul>
+                    </div>
                   </li>
                 </ul>
-                <div style="display:flex; justify-content: flex-end;">
-                  <div class="portfolio-arrow" id="web">
-                    <span style="margin-right:10px;">자세히 보기</span>
-                    <i class="fas fa-arrow-circle-right portfolio-icon"></i> 
-                  </div>
-                </div>
-              <!-- <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a> -->
-              <!-- <a href="portfolio-web.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+              </div>
             </div>
+            <div style="display:flex; justify-content: flex-end;">
+              <div class="portfolio-arrow" id="web">
+                <span style="margin-right:10px; font-size: 15px;">자세히 보기</span>
+                <i class="fas fa-arrow-circle-right portfolio-icon"></i> 
+              </div>
             </div>
           </div>
           <script>
@@ -625,13 +623,14 @@
           </script>
 
           <div class="col-lg-4 col-md-6 portfolio-item">
-            <h1>Oracle Project</h1>
+            <h1>Oracle Project <span>교육센터 DB설계</span></h1>
+            <hr>
             <div class="protfolio-box">
-              <img src="assets/img/oracle/오라클_1.png" class="img-fluid" alt="" style="height:682px">
+              <div class="thumbnail-box">
+                <img src="assets/img/oracle/오라클_1.png" class="img-fluid" alt="" style="width: 256px; height:350px">
+              </div>
               <div class="portfolio-content">
                 <ul>
-                  <li><strong>교육센터 DB설계</strong></li>
-                  <br>
                   <li>
                     <div style="display: flex;">
                       <div class="portfolio-title-sub"><strong>주요기능</strong></div>
@@ -664,16 +663,14 @@
                     </li>
                     </ul>
                   </li>
-
-                  
                 </ul>
-                <div style="display:flex; justify-content: flex-end;">
-                  <div class="portfolio-arrow" id="oracle">
-                    <span style="margin-right:10px;">자세히 보기</span>
-                    <i class="fas fa-arrow-circle-right portfolio-icon"></i> 
-                  </div>
-                </div>
+              </div>
             </div>
+            <div style="display:flex; justify-content: flex-end;">
+              <div class="portfolio-arrow" id="oracle">
+                <span style="margin-right:10px; font-size: 15px;">자세히 보기</span>
+                <i class="fas fa-arrow-circle-right portfolio-icon"></i> 
+              </div>
             </div>
           </div>
           <script>
@@ -682,21 +679,20 @@
             web.onclick=function(){
               location.href="portfolio-oracle.html";
             };
-
           </script>
 
           <div class="col-lg-4 col-md-6 portfolio-item">
-            <h1>Java Project</h1>
+            <h1>Java Project <span>주말 농장 서비스</span></h1>
+            <hr>
             <div class="protfolio-box">
-              <img src="assets/img/WF/0-0. 로그인 화면.PNG" class="img-fluid" alt="" style="height:323px">
+              <div class="thumbnail-box">
+                <img src="assets/img/WF/0-0. 로그인 화면.PNG" class="img-fluid" alt="" style="height:323px">
+              </div>
               <div class="portfolio-content">
                 <ul>
-                  <li><strong>주말 농장 서비스</strong></li>
-                  <!-- <li><strong>포트포워딩</strong> 작업을 하여 팀원들이 PC DB에 접속할 수 있도록 지원했습니다.</li> -->
-                  <br>
                   <li>
                     <div style="display: flex;">
-                      <div class="portfolio-title-sub-wf"><strong>주요기능</strong></div>
+                      <div class="portfolio-title-sub"><strong>주요기능</strong></div>
                       <ul style="list-style:none; width:500px; padding-left: 20px;">
                         <li>주말 농장 서비스를 이용할 수 있도록 시스템 구축 및 편의성을 제공할 수 있는 콘솔프로그램을 개발했습니다.</li>
                       </ul>
@@ -704,7 +700,7 @@
                   </li>
                   <li>
                     <div style="display: flex;">
-                      <div class="portfolio-title-sub-wf"><strong>파일 입출력</strong></div>
+                      <div class="portfolio-title-sub"><strong>파일 입출력</strong></div>
                       <ul style="list-style:none; width:500px; padding-left: 20px;">
                         <li>BufferedReader, Writer, new FileReader, Writer</li>
                       </ul>
@@ -712,7 +708,7 @@
                   </li>
                   <li>
                     <div style="display: flex;">
-                      <div class="portfolio-title-sub-wf"><strong>컬렉션</strong></div>
+                      <div class="portfolio-title-sub"><strong>컬렉션</strong></div>
                       <ul style="list-style:none; width:500px; padding-left: 20px;">
                         <li>ArrayList, HashMap</li>
                       </ul>
@@ -720,7 +716,7 @@
                   </li>
                   <li>
                     <div style="display: flex;">
-                      <div class="portfolio-title-sub-wf"><strong>기타 클래스 및 기술</strong></div>
+                      <div class="portfolio-title-sub"><strong>기타 클래스 및 기술</strong></div>
                       <ul style="list-style:none; width:500px; padding-left: 20px;">
                         <li>Random, Math, Calendar 클래스</li>
                         <li>Overloading, Overrade</li>
@@ -729,13 +725,13 @@
                     </ul>
                   </li>
                 </ul>
-                <div style="display:flex; justify-content: flex-end;">
-                  <div class="portfolio-arrow" id="wf">
-                    <span style="margin-right:10px;">자세히 보기</span>
-                    <i class="fas fa-arrow-circle-right portfolio-icon"></i> 
-                  </div>
-                </div>
+              </div>
             </div>
+            <div style="display:flex; justify-content: flex-end;">
+              <div class="portfolio-arrow" id="wf">
+                <span style="margin-right:10px; font-size: 15px;">자세히 보기</span>
+                <i class="fas fa-arrow-circle-right portfolio-icon"></i> 
+              </div>
             </div>
           </div>
           <script>
@@ -748,21 +744,23 @@
           </script>
 
           <div class="col-lg-4 col-md-6 portfolio-item">
-            <h1>한양로보틱스</h1>
+            <h1><b>한양로보틱스</b> <span>제어팀 대리</span></h1>
+            <hr>
             <div class="protfolio-box">
-              <img src="assets/img/hyrobotics-logo.png" class="img-fluid" alt="" style="height:150px">
+              <div class="thumbnail-box">
+                <img src="assets/img/hyrobotics-logo.png" class="img-fluid" alt="" style="height:150px">
+              </div>
               <div class="portfolio-content">
                 <ul>
-                  <li><strong>제어팀 대리</strong></li>
-                  <!-- <li><strong>포트포워딩</strong> 작업을 하여 팀원들이 PC DB에 접속할 수 있도록 지원했습니다.</li> -->
                   <br>
                   <li>
                     <div style="display: flex;">
                       <div class="portfolio-title-sub"><strong>주요업무</strong></div>
                       <ul style="list-style:none; width:500px; padding-left: 20px;">
-                        <li>취출 로봇회사에서 제어팀으로 4년간 근무했습니다.</li>
+                        <li>취출 로봇회사 제어팀으로 4년간 근무했습니다.</li>
                         <li>C언어와 IAR 툴을 사용하여 공압타입의 로봇개발 및 유지보수를 담당했습니다.</li>
                         <li>PLC프로그램언어와 KEBA사의 컨트롤러를 사용하여 3축, 5축, 7축의 서보모터타입 로봇의 유지보수를 담당하였습니다.</li>
+                        <li>국내, 해외 다양한 곳으로 출장가서 고객사양에 맞게 커스텀마이징했습니다.</li>
                       </ul>
                     </div>
                   </li>
@@ -772,31 +770,39 @@
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item">
-            <h1>Arduino Project</h1>
+            <h1>Arduino Project <span>학사 졸업작품</span></h1>
+            <hr>
             <div class="protfolio-box">
-              <img src="assets/img/arduino/아두이노.png" class="img-fluid" alt="" style="height:363px">
+              <div class="thumbnail-box">
+                <img src="assets/img/arduino/아두이노.png" class="img-fluid" alt="" style="height:363px">
+              </div>
               <div class="portfolio-content">
                 <ul>
-                  <li><strong>학사 졸업작품</strong></li>
-                  <br>
                   <li>
                     <div style="display: flex;">
                       <div class="portfolio-title-sub"><strong>주요기능</strong></div>
                       <ul style="list-style:none; width:500px; padding-left: 20px;">
                         <li>아침에 물한잔으로 건강한 생활패턴을 위한 타이머를 부착시킨 텀블러입니다. </li>
-                        <li>아두이노 MCU에 워터 센서, 스피커, LCD 등을 사용하여 제작하였습니다.</li>
                         <li>일정량의 수위만큼 내려오면 알람이 Off되는 텀블러입니다.</li>
                       </ul>
                     </div>
                   </li>
+                  <li>
+                    <div style="display: flex;">
+                      <div class="portfolio-title-sub"><strong>사용 부품</strong></div>
+                      <ul style="list-style:none; width:500px; padding-left: 20px;">
+                        <li>Arduino Board, 1602LCD, 비프 스피커, 워터센서</li>
+                      </ul>
+                    </div>
+                  </li>
                 </ul>
-                <div style="display:flex; justify-content: flex-end;">
-                  <div class="portfolio-arrow" id="arduino">
-                    <span style="margin-right:10px;">자세히 보기</span>
-                    <i class="fas fa-arrow-circle-right portfolio-icon"></i> 
-                  </div>
-                </div>
+              </div>
             </div>
+            <div style="display:flex; justify-content: flex-end;">
+              <div class="portfolio-arrow" id="arduino">
+                <span style="margin-right:10px; font-size: 15px;">자세히 보기</span>
+                <i class="fas fa-arrow-circle-right portfolio-icon"></i> 
+              </div>
             </div>
           </div>
           <script>
@@ -805,7 +811,6 @@
             web.onclick=function(){
               location.href="portfolio-arduino.html";
             };
-
           </script>
 
           
@@ -900,7 +905,7 @@
       <div class="container" data-aos="fade-up">
       <div class="section-title">
         <h2 style="font-size: 20px;">Education</h2>
-        <h3>Check my <span>Education</span></h3>
+        <!-- <h3>Check my <span>Education</span></h3> -->
         <!-- <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p> -->
       </div>
 
@@ -1035,7 +1040,7 @@
 
         <div class="section-title">
           <h2 style="font-size: 20px;">Archiving</h2>
-          <h3>Check my <span>Archiving</span></h3>
+          <!-- <h3>Check my <span>Archiving</span></h3> -->
           <!-- <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p> -->
         </div>
 

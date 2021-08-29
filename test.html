@@ -1,0 +1,668 @@
+<div class="wd-ui-sub-contents"> <!-- S : 페이지 레이아웃 컨테이너 --> 
+  <div class="wd-ui-info-wrap"> <!-- S : 우측 캠페인 관련 정보 --> 
+   <div class="wd-ui-sub-opener-info" style="padding-top: 0;"> <!-- S : 프로젝트 정보 ******************************************************************* 웹 --> 
+    <h3 class="text-hidden">프로젝트 정보</h3> 
+    <div class="project-state-info"> 
+     <div class="state-box"> 
+      <p class="remaining-day">3일 남음</p> 
+      <p class="rate-bar"><em style="width:11640%"></em></p> 
+      <p class="achievement-rate"><strong>11640</strong>% 달성</p> 
+      <p class="total-amount"><strong>58,202,000</strong>원 펀딩</p> 
+      <p class="total-supporter"><strong>500</strong>명의 서포터</p> 
+     </div> 
+     <div class="btn-wrap funding"> <button onclick="backMoney('backing', 'false');" class="wz button primary block btn-reward-funding">펀딩하기</button> 
+     </div> <layout:put block="page_script" type="APPEND"> 
+      <script type="text/javascript">
+   function reopenRequest(gaEvtLabel){
+       var gaEvtCategory = "report_supporter_reopen";
+     var gaEvtAction = "apply";
+     var gaEvtValue = 0;
+     try{
+       ga('send', 'event', gaEvtCategory, gaEvtAction, gaEvtLabel, gaEvtValue);
+     } catch(e) {}
+   }
+ </script> 
+     </layout:put> 
+     <div class="btn-wrap share"> 
+      <div class="btn-wrap-flex"> <button id="btnLike" class="campaign-like btn-like"><i class="icon-like"></i> <em id="cntLike" class="cnt-like">445</em></button> <button class="campaign-message btn-message"><i class="chat-o icon" aria-hidden="true"></i>문의</button> <button id="btnShare" class="campaign-share btn-share" onclick="wadiz.share.kakaoSdkInit();">공유하기</button> 
+      </div> 
+      <div class="wz message-popup bottom"> 
+       <input type="checkbox" id="message-popup-desktop"> <em class="popup"> <label class="btn-close" for="message-popup-desktop"><i class="icon close"></i></label> 지금 펀딩하기 고민된다면,<br>좋아하는 프로젝트로 등록해보세요. </em> 
+      </div> 
+      <div id="shareSection" class="share-section"> 
+       <ul class="share-list" style="margin-top:10px"> 
+        <li><button class="wz button dense icon-facebook circular" onclick="wadiz.share.facebook();" title="페이스북 공유" style="width:36px;padding:0"></button></li> 
+        <li><button class="wz button dense icon-kakao circular" onclick="wadiz.share.kakao();" title="카카오톡 공유" style="width:36px;padding:0"></button></li> 
+        <li><button class="wz button dense icon-twitter circular" onclick="wadiz.share.twitter();" title="트위터 공유" style="width:36px;padding:0"></button></li> 
+        <li><button class="wz button dense icon-link circular" onclick="wadiz.share.urlCopy();" title="URL 공유" style="width:36px;padding:0"></button></li> 
+        <li><button class="wz button dense icon-code circular" onclick="window.open('/web/embed/reward/112372','_blank');" title="임베드 공유" style="width:36px;padding:0"></button></li> 
+       </ul> 
+      </div> 
+     </div> 
+     <div class="banner-section-RB2"></div> 
+    </div> <!--E : 프로젝트 정보  --> <!-- S : 프로젝트 신고하기 --> 
+    <div class="wz-message-box project-report"> 
+     <div id="reward-report-content" data-campaign-id="112372" data-is-logged-in="false" data-maker-name="주식회사 제이펀"> 
+     </div> 
+    </div> <!-- E : 프로젝트 신고하기 --> <!--S : 팔로우활동 정보  --> 
+    <div class="social-info"> <a href="/web/campaign/detailBacker/112372"> 
+      <figure> 
+       <div class="profiles"> <span style="background-image: url()"></span> 
+       </div> 
+       <figcaption> 
+        <p><strong></strong></p> 
+       </figcaption> 
+      </figure> <span class="icon-chevron-right"> </span></a> 
+    </div> <!--E : 팔로우활동 정보  --> <!--S : 지지서명 정보  --> 
+    <h3 class="text-hidden">지지서명</h3> 
+    <div id="campaign-support-signature" data-count="83" data-campaign-id="112372" data-post-callback="postFeedMyFacebook" data-campaign-type="reward"></div> <!-- E : 지지서명 정보  --> <!-- S : 메이커 정보  --> 
+    <div class="project-maker-info"> 
+     <h3 class="project-right-title">메이커 정보</h3> 
+     <div id="reward-maker-info" data-enc-user-id="228727402" data-campaign-id="112372" data-image-url="https://www.wadiz.kr/wwwwadiz/green001/2021/0512/20210512212827209_112372.jpg" data-maker-name="(주)제이펀" data-answer-hour-time="1일 이내" data-member-list="[]" data-host-email="j-fun@naver.com" data-host-call-num="07041208606" data-maker-kakao-plus-home-url="http://pf.kakao.com/_Vqaxcj" data-maker-kakao-plus-search-id="@제이펀" data-website-a="www.j-fun.net" data-website-b="" data-social-url-fb="" data-social-url-tw="" data-social-url-ig="legato_korea" data-is-preview="false"></div> 
+    </div> <!-- E : 메이커 정보  --> <!-- S : 모바일 지지서명  --> 
+    <div class="wz-sign-box-mobile"> 
+     <div id="campaign-support-signature" data-count="83" data-campaign-id="112372" data-post-callback="postFeedMyFacebook"></div> 
+    </div> <!-- E : 모바일 지지서명  --> <!-- S : 보상품 목록, 참여할 때 드리는 선물  --> 
+    <div id="campaign-rewards" style="position: relative; top:-50px"></div> 
+    <div class="moveRewards"> 
+     <div class="wd-ui-gift"> 
+      <h3 class="project-right-title">리워드 선택</h3> <button class="rightinfo-reward-list  ing" onclick="backMoney('262925', 'false')"> 
+       <div class="top-info"> 
+        <dl class="reward-info"> 
+         <dt>
+           136,000원 펀딩 
+         </dt> 
+         <dd> 
+          <p class="reward-name">슈퍼 얼리버드</p> 
+          <p>전동 그라인더 + 수동핸들 + 파우치 + 종이필터 + 원두50g</p> 
+         </dd> 
+        </dl> 
+        <ul class="data-info"> 
+         <li class="shipping" style="width: 100%; margin-bottom: 5px;">배송비<em>3,000원</em></li> 
+         <li class="date" style="width: 100%;">리워드 발송 시작일 <em>2021년 09월 초 (1~10일) 예정</em> </li> 
+        </ul> 
+        <p class="reward-qty">제한수량 <strong>400</strong>개 &nbsp; <em>현재 385개 남음!</em></p> 
+        <p class="reward-soldcount">총 <strong>15</strong>개 펀딩완료</p> 
+       </div> <p class="hover-text">이 리워드 펀딩하기</p> </button> <button class="rightinfo-reward-list  ing" onclick="backMoney('262927', 'false')"> 
+       <div class="top-info"> 
+        <dl class="reward-info"> 
+         <dt>
+           250,000원 펀딩 
+         </dt> 
+         <dd> 
+          <p class="reward-name">커플 얼리버드</p> 
+          <p>전동 그라인더 + 수동핸들 + 파우치 + 종이필터 + 원두50g </p> 
+         </dd> 
+        </dl> 
+        <ul class="data-info"> 
+         <li class="shipping" style="width: 100%; margin-bottom: 5px;">배송비<em>3,000원</em></li> 
+         <li class="date" style="width: 100%;">리워드 발송 시작일 <em>2021년 09월 초 (1~10일) 예정</em> </li> 
+        </ul> 
+        <p class="reward-qty">제한수량 <strong>150</strong>개 &nbsp; <em>현재 148개 남음!</em></p> 
+        <p class="reward-soldcount">총 <strong>2</strong>개 펀딩완료</p> 
+       </div> <p class="hover-text">이 리워드 펀딩하기</p> </button> <button class="rightinfo-reward-list soldout ing" onclick="backMoney('262923', 'true')"> 
+       <div class="top-info"> 
+        <dl class="reward-info"> 
+         <dt>
+           136,000원 펀딩 
+         </dt> 
+         <dd> 
+          <p class="reward-name">울트라 얼리버드</p> 
+          <p>전동 그라인더 + 수동핸들 + 파우치 + 종이필터 + 원두50g + 우드스푼 + 우드 트레이</p> 
+         </dd> 
+        </dl> 
+        <ul class="data-info"> 
+         <li class="shipping" style="width: 100%; margin-bottom: 5px;">배송비<em>3,000원</em></li> 
+         <li class="date" style="width: 100%;">리워드 발송 시작일 <em>2021년 09월 초 (1~10일) 예정</em> </li> 
+        </ul> 
+        <p class="reward-qty soldout"><em>제한수량이 모두 펀딩되었습니다.</em></p> 
+        <p class="reward-soldcount">총 <strong>400</strong>개 펀딩완료</p> 
+       </div> <p class="hover-text soldout">제한수량이<br>모두 펀딩되었습니다.</p> </button> 
+     </div> 
+    </div> <!-- E : 보상품 목록, 참여할 때 드리는 선물 --> <!-- S : 인기 프로젝트 리스트 --> 
+    <div id="normalpane" class="recommend-box-container"> 
+     <div id="fixed-funding-btn" class="fixed-funding-btn"> <button onclick="backMoney('backing', 'false');" class="wz button primary block">이 프로젝트 펀딩하기</button> 
+     </div> <!-- S : 공간 사이드 배너 --> <!-- E : 공간 사이드 배너 --> 
+     <div class="recommend-box"> 
+      <h3 class="title">인기 프로젝트</h3> 
+      <div class="item"> 
+       <div class="number">
+        1
+       </div> 
+       <div class="text">
+        <a href="/web/campaign/detail/113438">[캐릭캐릭체인지] 내 일상에 동심을 심어줄 그시절 그만화, 캐캐체 굿즈 </a>
+       </div> 
+      </div> 
+      <div class="item"> 
+       <div class="number">
+        2
+       </div> 
+       <div class="text">
+        <a href="/web/campaign/detail/120499">[누적펀딩률23,804% 릿제로x독립일기콜라보] 신개념 블루투스 리모컨!</a>
+       </div> 
+      </div> 
+      <div class="item"> 
+       <div class="number">
+        3
+       </div> 
+       <div class="text">
+        <a href="/web/campaign/detail/120871">[누적 5.9억] 서포터 의견 듣고 돌아왔어요 피카딜리 승무원 구두</a>
+       </div> 
+      </div> 
+      <div class="item"> 
+       <div class="number">
+        4
+       </div> 
+       <div class="text">
+        <a href="/web/campaign/detail/103036">미백세럼 기강 잡으러 왔습니다 | 심플리웍스 &lt;세럼한번&gt;</a>
+       </div> 
+      </div> 
+      <div class="item"> 
+       <div class="number">
+        5
+       </div> 
+       <div class="text">
+        <a href="/web/campaign/detail/119534">[3.5억|마지막앵콜]1회세안으로 모공대청소,모공하나에티트리20개가?</a>
+       </div> 
+      </div> 
+      <div class="item"> 
+       <div class="number">
+        6
+       </div> 
+       <div class="text">
+        <a href="/web/campaign/detail/122547">[4326% 마지막앵콜] 술꾼, 알쓰 모두 주목! 소주1잔으로 하이볼을!</a>
+       </div> 
+      </div> 
+      <div class="item"> 
+       <div class="number">
+        7
+       </div> 
+       <div class="text">
+        <a href="/web/campaign/detail/122828">[2.2억/마지막 앵콜] 블랙헤드 개선! 임상확인 유산균 클렌저</a>
+       </div> 
+      </div> 
+      <div class="item"> 
+       <div class="number">
+        8
+       </div> 
+       <div class="text">
+        <a href="/web/campaign/detail/121734">[5.4억 앵콜]브라 없이 입는, 오가닉 심리스 쉬어나시&amp;슬립 #띵작이너</a>
+       </div> 
+      </div> 
+      <div class="item"> 
+       <div class="number">
+        9
+       </div> 
+       <div class="text">
+        <a href="/web/campaign/detail/121685">당신의 인생을 변화시켜줄 평생습관, '티타늄 혀클리너'</a>
+       </div> 
+      </div> 
+      <div class="item"> 
+       <div class="number">
+        10
+       </div> 
+       <div class="text">
+        <a href="/web/campaign/detail/121026">[마지막 앵콜/3억] 외출필수품! 111g UV차단 초경량우산(1만원대)</a>
+       </div> 
+      </div> 
+     </div> 
+    </div> <!-- E : 인기 프로젝트 리스트 --> <!-- S : 리턴 폼 --> 
+    <form action="/web/waccount/wAccountLogin" id="returnForm" method="get" novalidate> 
+     <input type="hidden" id="returnURL" name="returnURL"> 
+    </form> <!-- E : 리턴 폼 --> <!-- S : 인증 확인 모달 --> 
+    <div id="authMailLypop" class="lypop-fixed" style="display: none;"> 
+     <div class="popup-mint-basic"> <a href="javascript:closeLyPop('authMail');" class="btn-close"><em></em></a> 
+      <div class="popup-mint-text"> <strong class="tit-popup">펀딩을 진행하기 위한<br> 기본 회원 정보를 확인해 주세요.</strong> 
+       <div style="padding:20px;">
+        - 이메일 인증 : 미인증
+       </div> 
+      </div> 
+      <div class="btn-wrap"> <a class="btn-pd-mint" href="/web/waccount/wAuth">기본 회원정보 변경</a> 
+      </div> 
+     </div> 
+    </div> <!-- E : 인증 확인 모달 --> 
+   </div> <!-- E : 우측 캠페인 관련 정보 --> <!-- S : 캠페인 정보 --> 
+   <div class="wd-ui-sub-campaign-info-container"> 
+    <div class="wd-ui-sub-campaign-info"> <!-- S : 탭 주요 콘텐츠 --> 
+     <div class="wd-ui-tab-contents"> 
+      <section class="wd-ui-tab-contents"> 
+       <h3 class="text-hidden">프로젝트 스토리</h3> <!-- 이미지가 아닌 동영상 URL이 넘어오는 경우 iframe에 동영상을 보여줘야 함 --> 
+       <div class="view-slide-wrap" style="padding: 0"> 
+        <ul class="view-slide-big image-slide" style="display: none"> 
+         <li> 
+          <div class="img-responsive" style="background:url('https://cdn.wadiz.kr/wwwwadiz/green001/2021/0714/20210714153313110_112372.gif');background-size:cover;background-position:center 0;width:100%;height:0;padding-bottom: 63.49%;"></div> </li> 
+         <li> 
+          <div class="img-responsive" style="background:url('https://cdn.wadiz.kr/wwwwadiz/green001/2021/0714/20210714153315066_112372.gif');background-size:cover;background-position:center 0;width:100%;height:0;padding-bottom: 63.49%;"></div> </li> 
+         <li> 
+          <div class="img-responsive" style="background:url('https://cdn.wadiz.kr/wwwwadiz/green001/2021/0714/20210714153317184_112372.gif');background-size:cover;background-position:center 0;width:100%;height:0;padding-bottom: 63.49%;"></div> </li> 
+         <li> 
+          <div class="img-responsive" style="background:url('https://cdn.wadiz.kr/wwwwadiz/green001/2021/0714/20210714153320697_112372.jpg/wadiz/format/jpg/quality/80/optimize');background-size:cover;background-position:center 0;width:100%;height:0;padding-bottom: 63.49%;"></div> </li> 
+         <li> 
+          <div class="img-responsive" style="background:url('https://cdn.wadiz.kr/wwwwadiz/green001/2021/0714/20210714153513243_112372.jpg/wadiz/format/jpg/quality/80/optimize');background-size:cover;background-position:center 0;width:100%;height:0;padding-bottom: 63.49%;"></div> </li> 
+         <li> 
+          <div class="img-responsive" style="background:url('https://cdn.wadiz.kr/wwwwadiz/green001/2021/0714/20210714153516899_112372.jpg/wadiz/format/jpg/quality/80/optimize');background-size:cover;background-position:center 0;width:100%;height:0;padding-bottom: 63.49%;"></div> </li> 
+         <li> 
+          <div class="img-responsive" style="background:url('https://cdn.wadiz.kr/wwwwadiz/green001/2021/0714/20210714153518918_112372.jpg/wadiz/format/jpg/quality/80/optimize');background-size:cover;background-position:center 0;width:100%;height:0;padding-bottom: 63.49%;"></div> </li> 
+         <li> 
+          <div class="img-responsive" style="background:url('https://cdn.wadiz.kr/wwwwadiz/green001/2021/0714/20210714153523337_112372.jpg/wadiz/format/jpg/quality/80/optimize');background-size:cover;background-position:center 0;width:100%;height:0;padding-bottom: 63.49%;"></div> </li> 
+        </ul> 
+       </div> 
+       <ul class="view-slide-nav" style="display: none"> 
+        <li><img class="img-responsive" src="https://cdn.wadiz.kr/wwwwadiz/green001/2021/0714/20210714153313110_112372.gif" alt=""></li> 
+        <li><img class="img-responsive" src="https://cdn.wadiz.kr/wwwwadiz/green001/2021/0714/20210714153315066_112372.gif" alt=""></li> 
+        <li><img class="img-responsive" src="https://cdn.wadiz.kr/wwwwadiz/green001/2021/0714/20210714153317184_112372.gif" alt=""></li> 
+        <li><img class="img-responsive" src="https://cdn.wadiz.kr/wwwwadiz/green001/2021/0714/20210714153320697_112372.jpg/wadiz/format/jpg/quality/80/optimize" alt=""></li> 
+        <li><img class="img-responsive" src="https://cdn.wadiz.kr/wwwwadiz/green001/2021/0714/20210714153513243_112372.jpg/wadiz/format/jpg/quality/80/optimize" alt=""></li> 
+        <li><img class="img-responsive" src="https://cdn.wadiz.kr/wwwwadiz/green001/2021/0714/20210714153516899_112372.jpg/wadiz/format/jpg/quality/80/optimize" alt=""></li> 
+        <li><img class="img-responsive" src="https://cdn.wadiz.kr/wwwwadiz/green001/2021/0714/20210714153518918_112372.jpg/wadiz/format/jpg/quality/80/optimize" alt=""></li> 
+        <li><img class="img-responsive" src="https://cdn.wadiz.kr/wwwwadiz/green001/2021/0714/20210714153523337_112372.jpg/wadiz/format/jpg/quality/80/optimize" alt=""></li> 
+       </ul> 
+       <script>
+   window.lazySizesConfig = window.lazySizesConfig || {};
+   window.lazySizesConfig.expFactor = 1;
+   window.lazySizesConfig.expand = 350; // lazysizes에서 뷰포트 영역외에 350px 만큼 맞닿은 이미지를 로딩하기 위해서 수정
+ 
+   // lazysizes 라이브러리를 통해서 지연로딩이 완료된 이후에 호출되는 callback 함수
+   document.addEventListener('lazybeforeunveil', function(e) {
+     var target = e.target;
+     if(target) {
+       if(target.style.hasOwnProperty('padding-bottom')) {
+         target.style.removeProperty('padding-bottom');
+       }
+ 
+       if(target.style.hasOwnProperty('height')) {
+         target.style.removeProperty('height');
+       }
+ 
+       if(target.style.hasOwnProperty('width')) {
+         target.style.removeProperty('width');
+       }
+ 
+       if(target.hasAttribute('data-expand')) {
+         target.removeAttribute('data-expand');
+       }
+     }
+   });
+ 
+   document.addEventListener('DOMContentLoaded', function() {
+     // 크라우드펀딩 제대로 알고 펀딩하자 팝업 show hide
+     var fundingNotificationModal = document.querySelector(".funding-notification-modal");
+     var fundingNotificationModalOpenBtn = document.querySelector(".funding-notification-more-view");
+     var fundingNotificationCancelBtns = document.querySelectorAll(".funding-notification-modal-ok, .funding-notification-modal-more-view, .funding-notification-modal-cancel");
+     fundingNotificationModalOpenBtn.addEventListener("click", function() {
+       fundingNotificationModal.style.display='block';
+     });
+ 
+     for(var i = 0; i < fundingNotificationCancelBtns.length; ++i) {
+       fundingNotificationCancelBtns[i].addEventListener("click",function() {
+         fundingNotificationModal.style.display='none';
+       });
+     }
+ 
+     // 이미지 지연로딩 시 초기에는 높이값이 없으므로 padding-bottom 속성으로 높이값을 지정
+     var introdetails = document.getElementById('introdetails');
+     if(introdetails) {
+       var images = introdetails.querySelectorAll('img[data-src]');
+       for(var i=0; i < images.length; ++i) {
+         var dataset = images[i].dataset;
+         if(!images[i].classList.contains('lazyload')) {
+           images[i].classList.add('lazyload');
+         }
+ 
+         // 마지막 이미지에 data-width, data-height가 없고, 스토리 탭을 누를 경우 마지막 이미지가 로딩되서 스크롤이 내려가는 이슈수정
+         if(images.length - i === 1) {
+           images[i].style.cssText = 'height: 350px !important; width: 100% !important;' + images[i].style.cssText;
+           var rect = images[i].getBoundingClientRect();
+           if(rect.right >= 32) {
+             // (expand(-40) * -1) * 0.8(lazysizes 라이브러리에서 계산로직 확인 후 rect.right가 32보다 클경우에만 expand -40값을 주도록 수정(마지막 이미지에 대해서는 라이브러리 뷰포트값을 줄이기 위한 코드)
+             dataset.expand = '-40'; // lazysizes 지연로딩을 음수값을 줘서 안보이는 이미지를 로딩하지 않도록 수정
+           }
+         } else if(dataset.width && dataset.height) {
+           // 스튜디오에서 제공해주는 width, height에 대해서는 이미지 로드되기 전 padding값으로 위치를 지정한다.
+           var width = Number(dataset.width);
+           var height = Number(dataset.height);
+ 
+           if((!isNaN(width) && !isNaN(height)) && height > 0) {
+             images[i].style.setProperty('padding-bottom', (100 / (width / height)) + '%');
+           }
+         }
+       }
+     }
+   });
+ 
+   jQuery(function($) {
+     $('.view-slide-big.image-slide').show().slick({
+       slidesToShow: 1,
+       slidesToScroll: 1,
+       adaptiveHeight: true,
+       fade: true,
+       focusOnSelect: true
+     });
+ 
+     // 공간 팝업 show hide
+     $('.space-box-container, .space-box-container-small').on('click', function() {
+       $('#spaceModalContainer').css('display', 'block');
+     });
+ 
+     $('.btn-cancel').on('click', function() {
+       $('#spaceModalContainer').css('display', 'none');
+     });
+   });
+ 
+   function copy() {
+     var inp = document.createElement('input');
+     document.body.appendChild(inp);
+     inp.value = document.getElementById("addressText").innerText;
+     inp.select();
+     document.execCommand('copy',false);
+     inp.remove();
+     alertify.alert('주소가 복사되었습니다.');
+   }
+   </script> 
+       <script src="/resources/static/js/lazysizes.min.js"></script> 
+       <div class="campaign-title"> <strong class="title"><a href="/web/campaign/detail/112372">카페보다 맛있는 홈커피의 비밀! 랍스터도 갈아버리는 강력한 그라인더</a></strong> <span class="category icon-label-o"><em>테크·가전</em></span> 
+       </div> 
+       <div class="campaign-summary" style="background-color: #ffffff;">
+         어디에서나 맛있는 커피를 즐기세요. 강력한 내구성부터 정밀한 분쇄도까지 섬세하게 조절 가능한 프로급 커피 그라인더 레가토 듀얼 입니다 
+       </div> <!-- S : campaign 컨텐츠 --> 
+       <div class="wd-ui-campaign-content"> 
+        <div class="wd-ui-cont"> <!-- S : 프로젝트 정보 --> 
+         <div class="project-state-info"> 
+          <div class="state-box"> 
+           <p class="remaining-day">3일 남음</p> 
+           <p class="rate-bar"><em style="width:11640%"></em></p> 
+           <p class="achievement-rate"><strong>11640</strong>% 달성</p> 
+           <p class="total-amount"><strong>58,202,000</strong>원 펀딩</p> 
+           <p class="total-supporter"><strong>500</strong>명의 서포터</p> 
+          </div> 
+          <div class="btn-wrap funding"> <button onclick="backMoney('backing', 'false');" class="wz button primary block btn-reward-funding">펀딩하기</button> 
+          </div> <layout:put block="page_script" type="APPEND"> 
+           <script type="text/javascript">
+   function reopenRequest(gaEvtLabel){
+       var gaEvtCategory = "report_supporter_reopen";
+     var gaEvtAction = "apply";
+     var gaEvtValue = 0;
+     try{
+       ga('send', 'event', gaEvtCategory, gaEvtAction, gaEvtLabel, gaEvtValue);
+     } catch(e) {}
+   }
+ </script> 
+          </layout:put> 
+          <div class="btn-wrap share"> 
+           <div class="btn-wrap-flex"> <button class="campaign-like btn-like"><i class="icon-like"></i> <em id="cntLike" class="cnt-like">445</em></button> <button class="campaign-message btn-message"><i class="chat-o icon" aria-hidden="true"></i>문의</button> <button class="campaign-share btn-share" onclick="wadiz.share.kakaoSdkInit();">공유하기</button> 
+           </div> 
+           <div id="shareSection" class="share-section"> 
+            <ul class="share-list"> 
+             <li><button class="wz button dense icon-facebook circular" onclick="wadiz.share.facebook();" title="페이스북 공유" style="width:36px;padding:0"></button></li> 
+             <li><button class="wz button dense icon-kakao circular" onclick="wadiz.share.kakao();" title="카카오톡 공유" style="width:36px;padding:0"></button></li> 
+             <li><button class="wz button dense icon-twitter circular" onclick="wadiz.share.twitter();" title="트위터 공유" style="width:36px;padding:0"></button></li> 
+             <li><button class="wz button dense icon-link circular" onclick="wadiz.share.urlCopy();" title="URL 공유" style="width:36px;padding:0"></button></li> 
+             <li><button class="wz button dense icon-code circular" onclick="window.open('/web/embed/reward/112372','_blank');" title="임베드 공유" style="width:36px;padding:0"></button></li> 
+            </ul> 
+           </div> 
+          </div> 
+          <div class="banner-section-RB2"></div> 
+         </div> <!-- E : 프로젝트 정보 --> 
+         <div class="project-maker-info"> 
+          <h3 class="project-right-title">메이커 정보</h3> 
+          <div id="reward-maker-info-2" data-is-mobile="true" data-enc-user-id="228727402" data-campaign-id="112372" data-image-url="https://www.wadiz.kr/wwwwadiz/green001/2021/0512/20210512212827209_112372.jpg" data-maker-name="(주)제이펀" data-answer-hour-time="1일 이내" data-member-list="[]" data-host-email="j-fun@naver.com" data-host-call-num="07041208606" data-website-a="www.j-fun.net" data-website-b="" data-social-url-fb="" data-social-url-tw="" data-social-url-ig="legato_korea" data-is-preview="false"></div> 
+         </div> <!-- S : 프로젝트 신고하기 --> 
+         <div class="wz-message-box project-report-mobile"> 
+          <div id="reward-report-content2" data-campaign-id="112372" data-is-logged-in="false" data-maker-name="주식회사 제이펀"> 
+          </div> 
+         </div> <!-- E : 프로젝트 신고하기 --> <!--S : 팔로우활동 정보  --> 
+         <div class="social-info mobile"> <a href="/web/campaign/detailBacker/112372"> 
+           <figure> 
+            <div class="profiles"> <span style="background-image: url()"></span> 
+            </div> 
+            <figcaption> 
+             <p><strong></strong></p> 
+            </figcaption> 
+           </figure> <span class="icon-chevron-right"> </span></a> 
+         </div> <!--E : 팔로우활동 정보  --> 
+         <br> <!-- S : 펀딩 기간, 보상품 제공일 --> 
+         <div> 
+          <div style="padding:20px;background:rgba(0, 196, 196, 0.1);border-radius:8px;"> 
+           <p style="color:#00b2b2;font-size:13px;line-height:20px;margin-bottom:8px;"> <strong>목표 금액</strong> 500,000원<br> <strong>펀딩 기간</strong> 2021.07.29-2021.08.23<br> </p> 
+           <p style="color:#60656a;font-size:12px;line-height:19px;"> 100% 이상 모이면 펀딩이 성공되며, 펀딩 마감일까지 목표 금액이 100% 모이지 않으면 결제가 진행되지 않습니다. </p> 
+          </div> 
+         </div> <!-- E : 펀딩 기간, 보상품 제공일 --> <!-- S : HW / HW + SW --> 
+         <div> 
+          <div class="wz value project-message-box"> 
+           <p><i class="icon info"></i>기술이 접목된 하드웨어 리워드 프로젝트</p> 
+           <ul> 
+            <li>하드웨어 리워드의 경우 와디즈는 프로젝트 오픈 전 샘플 테스트를 진행하고 있으며, 메이커의 생산/배송 계획, 공정 등도 체크하고 있습니다.</li> 
+            <li>다만, 크라우드펀딩 특성상 대부분 펀딩 종료 후 양산이 시작되어 샘플 검수 시 문제가 없더라도 양산시 품질에 이슈가 일부 발생할 수 있습니다. </li> 
+            <li>스토리 내 현재 리워드 제작 상황에 대해 기재하도록 하고 있으니, 꼼꼼히 읽어주신 후 펀딩에 참여해주시길 바랍니다.</li> 
+           </ul> 
+          </div> 
+         </div> <!-- E : HW / HW + SW --> <!-- 공간 노출 배너 --> <!-- 공간 노출 배너 --> <!-- S : 크라우드펀딩 제대로 알고 펀딩하자 --> 
+         <div class="funding-notification"> <span>메이커의 새로운 제품・서비스 제작을 지원하는</span> <strong>크라우드펀딩 제대로 알고 펀딩하자</strong> <a class="funding-notification-more-view"> 자세히 알아보기 </a> 
+         </div> <!-- E : 크라우드펀딩 제대로 알고 펀딩하자 --> <!-- 크라우드펀딩 제대로 알고 펀딩하자 모달 --> 
+         <div id="fundingNotificationModalContainer" class="overlay overlay-v2 funding-notification-modal"> 
+          <div class="wz-modal reward-detail-modal reward-detail-modal-v2 sm"> <button class="close-button funding-notification-modal-cancel"> <i class="wz close icon"></i> </button> 
+           <div class="modal-main"> 
+            <div class="modal-title">
+              크라우드펀딩 
+             <br>제대로 알고 펀딩하자 
+            </div> 
+            <div class="modal-content"> 
+             <p> 와디즈 펀딩은 리워드를 단순히 구매하는 쇼핑이 아닌 <strong>메이커의 새로운 제품・서비스 제작 과정을 지원</strong>하는 것입니다. </p> 
+             <p> 따라서, <strong>펀딩은 전자상거래법상 통신판매에 해당하지 않으므로 단순 변심으로 인한 환불 등 관련 규정이 적용되지 않습니다.</strong><br> 단, 펀딩 종료 전까지 언제든지 펀딩을 취소할 수 있습니다. </p> <a class="funding-notification-modal-more-view" target="_blank" href="https://www.wadiz.kr/link/funding_not_shopping"> 자세히 알아보기 </a> 
+            </div> 
+            <div class="modal-button-container align-right"> <button class="wz button primary funding-notification-modal-ok" type="button"> 확인 </button> 
+            </div> 
+           </div> 
+          </div> 
+         </div> <!-- 크라우드펀딩 제대로 알고 펀딩하자 모달 --> 
+         <div id="reward-detail-news-up-list" class="news-up-list" data-campaign-id="112372"> 
+         </div> <!-- S : 프로젝트 내용 --> 
+         <div id="introdetails" style="height: auto;" class="story"> <strong class="title">프로젝트 스토리</strong> 
+          <div class="inner-contents fr-view"> 
+           <p><img class="fr-fic fr-dib" data-width="800" data-height="800" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0712/20210712181635447_64.gif"></p>
+           <h5>어디까지 갈아봤냐구요?<strong><u>&nbsp;호두부터 강력한 랍스터까지요!</u></strong></h5>
+           <p><br></p>
+           <blockquote class="type-line">
+            <h2>자, 이제부터 <u>집.중!</u><br>바로 보여드리겠습니다</h2>
+           </blockquote>
+           <h5><img class="fr-fic fr-dib" data-width="600" data-height="337" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0712/20210712154829400_19.gif">1타! 백태부터 호두까지 <strong>완벽하게 갈아버리기!</strong></h5>
+           <p><br></p>
+           <blockquote class="type-default">
+            <p>영양만점<br><strong>키토산라떼 완-성!</strong></p>
+           </blockquote>
+           <h5><img data-width="540" data-height="303" class="fr-fic fr-dib" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0503/20210503164642862_62.gif"><img data-width="540" data-height="300" class="fr-fic fr-dib" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0503/20210503164724461_20.gif">홈런! 가루가 된 랍스터..보이시나요?</h5>
+           <p><span class="fr-video fr-deletable fr-fvc fr-dvb fr-draggable" draggable="true"><iframe width="640" height="360" src="https://www.youtube.com/embed/uLUf2YdARlU?&amp;wmode=opaque" frameborder="0" allowfullscreen class="fr-draggable"></iframe></span><br></p>
+           <p><img class="fr-fic fr-dib" data-width="808" data-height="167" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0712/20210712203120879_93.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <p><br></p>
+           <p><img data-width="809" class="fr-fil fr-dib" data-height="404" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0712/20210712153700177_40.png/wadiz/format/jpg/quality/80/optimize"></p>
+           <p><img class="fr-fic fr-dib" data-width="808" data-height="1159" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0713/20210713134901170_85.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <p><br></p>
+           <p><img class="fr-fic fr-dib" data-width="808" data-height="1581" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0712/20210712203110040_15.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <blockquote class="type-default">
+            <p>강력하고 깔끔한 그라인딩으로<br><strong><u>원두의 숨겨진 맛</u></strong>까지 끌어냅니다</p>
+           </blockquote>
+           <p><img class="fr-fic fr-dib" data-width="808" data-height="1144" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0707/20210707132940196_84.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <p><br></p>
+           <p><br></p>
+           <p><img class="fr-fic fr-dib" data-width="808" data-height="374" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0712/20210712175341466_44.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <p><img class="fr-fic fr-dib" data-width="809" data-height="1105" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0712/20210712202701868_88.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <blockquote class="type-default">
+            <p><strong>저속</strong>인데 <strong><u>강력</u></strong> 하다구요?</p>
+           </blockquote>
+           <p><img data-fr-image-pasted="true" data-width="809" data-height="269" class="fr-fic fr-dib" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0708/20210708213044850_50.gif"></p>
+           <h5>단방향 분쇄시 생기는 문제<img class="fr-fic fr-dib" data-width="809" data-height="1151" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0712/20210712191642777_36.jpg/wadiz/format/jpg/quality/80/optimize"></h5>
+           <p><img data-fr-image-pasted="true" data-width="800" data-height="400" class="fr-fic fr-dib" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0707/20210707203058331_59.gif"></p>
+           <h5>정방향 &amp; 역방향을 스스로 바꿔가며 <strong><u>분쇄, 모터와 날손상을 최소화</u></strong> 합니다.</h5>
+           <p>&nbsp;</p>
+           <p><img class="fr-fic fr-dib" data-width="808" data-height="485" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0713/20210713153050521_70.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <p><img class="fr-fic fr-dib" data-width="809" data-height="684" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0708/20210708203950957_15.jpg/wadiz/format/jpg/quality/80/optimize"><br></p>
+           <p><img class="fr-fic fr-dib" data-width="504" data-height="304" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0712/20210712153022486_26.gif"></p>
+           <h5>중심축을 고정한 뒤 원통형 날을 삽입해 저속으로 원두를 분쇄합니다.</h5>
+           <p><img data-fr-image-pasted="true" data-width="808" data-height="265" class="fr-fic fr-dib" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0429/20210429202009261_30.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <p><img data-fr-image-pasted="true" data-width="600" data-height="337" class="fr-fic fr-dib" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0429/20210429221549645_56.gif"></p>
+           <p><br></p>
+           <h3><u># 커피의 생명은 날!</u></h3>
+           <p>&nbsp;<strong>강력한 내구성의 강철을 정밀 가공</strong>한 레가토 듀얼은 원두를 <strong><u>정교하게 컷팅</u></strong>해 <strong>균일한 분쇄도</strong>를 만들어 균형 잡힌 커피 맛을 구현합니다.</p>
+           <p><img class="fr-fic fr-dib" data-width="808" data-height="623" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0709/20210709180413183_67.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <p><br></p>
+           <p><br></p>
+           <p><img class="fr-fic fr-dib" data-width="808" data-height="374" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0707/20210707133944876_11.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <p>&nbsp;레가토 듀얼은 편리한 <strong>스텝리스 조작</strong>으로&nbsp;분쇄도 조절이 가능합니다!<u>&nbsp;</u><strong><u>에스프레소부터 프렌치프레스</u> 까지 여러분의 취향</strong>대로 만들어 보세요!</p>
+           <blockquote class="type-line">
+            <h2>집에서도 프리미엄 커피를 즐겨보세요</h2>
+           </blockquote>
+           <p><img class="fr-fic fr-dib" data-width="808" data-height="737" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0707/20210707192829984_4.gif"></p>
+           <p><br></p>
+           <p><img data-width="808" data-height="203" class="fr-fil fr-dib" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0510/20210510183709755_83.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <h5><img data-width="600" data-height="336" class="fr-fic fr-dib" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0510/20210510133300550_33.gif">밀가루처럼 미세한 입자...보이시나요?</h5>
+           <p><br></p>
+           <p><img data-width="809" data-height="527" class="fr-fil fr-dib" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0511/20210511101424677_1.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <p><br></p>
+           <blockquote class="type-line">
+            <h2><u>에스프레소 추출까지</u> 가능한 레가토 듀얼 그라인더</h2>
+           </blockquote>
+           <p><img class="fr-fic fr-dib" data-width="808" data-height="1678" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0714/20210714151559602_14.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <p><br></p>
+           <p><br></p>
+           <p><img class="fr-fic fr-dib" data-width="808" data-height="374" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0707/20210707134017687_6.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <h2>찌꺼기를 마시고 있었다!</h2>
+           <p>내부 찌꺼기는 커피 맛을 좌우합니다. 그라인더 내부에는 원두의 기름성분 커피가루들이 뭉쳐 곳곳에 남게 되고, 이<strong>&nbsp;찌꺼기들이 부패해서 <u>나쁜 향미</u>를 뿜어냅니다.</strong></p>
+           <p><img class="fr-fic fr-dib" data-width="808" data-height="538" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0709/20210709181512492_19.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <p><br></p>
+           <p><img data-width="632" data-height="356" class="fr-fic fr-dib" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0510/20210510182259499_18.gif"></p>
+           <h2><u>관리를 더욱 쉽게!</u><br>최적의 설계디자인</h2>
+           <p>레가토 듀얼은 간단 분리로 내부 찌꺼기를 깔끔하게 제거할 수 있습니다. <strong><u>청소 솔도 선물로 드려요</u></strong></p>
+           <p><img class="fr-fic fr-dib" data-width="808" data-height="941" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0714/20210714143757243_97.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <p><br></p>
+           <p><img class="fr-fic fr-dib" data-width="808" data-height="117" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0707/20210707142047960_65.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <blockquote class="type-line">
+            <p>코니컬버 하단부와 스프링을 분리한 후 중심축을 분리 해주세요</p>
+           </blockquote>
+           <p><img class="fr-fic fr-dib" data-width="540" data-height="301" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0707/20210707142139022_21.gif"></p>
+           <p><br></p>
+           <blockquote class="type-line">
+            <p>동봉된 솔을 이용해 그라인더 내부와 날을 털어주세요&nbsp;</p>
+           </blockquote>
+           <p><img class="fr-fic fr-dib" data-width="540" data-height="301" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0707/20210707142233620_43.gif"></p>
+           <h5><strong><u>물 세척은 고장</u></strong><strong><u>의 원인</u></strong>이 됩니다</h5>
+           <p><a href="https://www.youtube.com/watch?v=Gv9iSdWDi7M&amp;t=8s" rel="noopener noreferrer" target="_blank">레가토 청소방법 바로가기</a></p>
+           <p><br></p>
+           <blockquote class="type-default">
+            <p><strong>쉬운 세척</strong>으로 신선한<br><strong><u>커피 본연의 맛</u></strong>을 느끼세요!</p>
+           </blockquote>
+           <p><img class="fr-fic fr-dib" data-width="808" data-height="1093" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0712/20210712155346132_82.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <p><br></p>
+           <p><br></p>
+           <p><img class="fr-fic fr-dib" data-width="808" data-height="374" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0707/20210707134025003_5.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <p><strong>모던한 디자인의 레가토 그라인더로 어디에서나 나만의 커피를 내려 드세요.&nbsp;</strong>한 손에 들어오는 레가토 그라인더는 여러분의 커피라이프를 더욱 풍성하게 만들어 드립니다.</p>
+           <p><span class="fr-video fr-deletable fr-fvc fr-dvb fr-draggable" draggable="true"><iframe width="640" height="360" src="https://www.youtube.com/embed/JD2GoNbNMAs?&amp;wmode=opaque" frameborder="0" allowfullscreen class="fr-draggable"></iframe></span><br></p>
+           <p><img data-width="809" data-height="1977" class="fr-fil fr-dib" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0429/20210429220831635_18.gif"></p>
+           <p><br></p>
+           <blockquote class="type-default">
+            <p><strong>신선하게</strong> 바로<br>그라인딩 하세요</p>
+           </blockquote>
+           <p>커피의 향미는 그라인딩시 발생하는데,<strong>&nbsp;<u>분쇄후 15분이 지나면&nbsp;</u>원두 고유의 향미 <u>60% 이상이 날아갑니다.</u></strong> 휴대성도 사용도 간편한 레가토 듀얼과 매일 어디에서나 신선한 커피를 드세요.</p>
+           <p><img class="fr-fic fr-dib" data-width="808" data-height="1457" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0709/20210709171310014_52.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <p><br></p>
+           <p><img data-width="809" data-height="282" class="fr-fil fr-dib" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0429/20210429220851247_68.gif"></p>
+           <p><img data-width="809" data-height="244" class="fr-fil fr-dib" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0429/20210429220910753_63.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <p>마음 평화롭게 경치를 보며 커피 한 잔의 여유를 즐기고 싶을때, 레가토 그라인더는 빛을 발합니다.&nbsp;텀블러 정도의 사이즈로 배낭에 쏙 들어가 보관이나 이동이 편리합니다.</p>
+           <h5><img data-width="540" data-height="303" class="fr-fic fr-dib" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0421/20210421230714754_14.gif">에코백 가방에서 쏘-옥</h5>
+           <h5><img data-width="540" data-height="303" class="fr-fic fr-dib" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0421/20210421230726974_15.gif">야외에서 커피 한 잔의 여유를 즐기고 싶을 때</h5>
+           <p><br></p>
+           <p><img data-width="809" data-height="318" class="fr-fil fr-dib" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0429/20210429220926059_48.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <p>차량 충전은 물론, 보조배터리로도 충전이 가능하며, <strong><u>1회 완충으로 9회 사용(25g 기준)</u></strong>이 가능해 활동성이 뛰어납니다.</p>
+           <p><img data-width="808" data-height="538" class="fr-fil fr-dib" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0421/20210421214942097_62.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <p><br></p>
+           <h5><img data-width="600" data-height="338" class="fr-fic fr-dib" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0503/20210503114638295_86.gif"><strong><u>USB타입 (MICRO B)</u></strong>으로 간편하게 충전!</h5>
+           <p><br></p>
+           <p><img data-width="809" data-height="230" class="fr-fil fr-dib" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0429/20210429220942692_95.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <p>시작 버튼만 눌러주세요. 그라인딩 완료 후 스스로 멈추는 절전기능이 있어, 그라인더를 오래 사용할 수 있습니다.</p>
+           <h5><img class="fr-fic fr-dib" data-width="808" data-height="454" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0713/20210713114142976_96.jpg/wadiz/format/jpg/quality/80/optimize"><img class="fr-fic fr-dib" data-width="808" data-height="455" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0713/20210713113258512_69.gif">지켜볼 필요 없이 원터치로 그라인딩 완료!</h5>
+           <p><img class="fr-fic fr-dib" data-width="808" data-height="1049" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0712/20210712155525836_19.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <p><br></p>
+           <p><img class="fr-fic fr-dib" data-width="808" data-height="473" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0712/20210712203214841_84.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <blockquote class="type-line">
+            <h2>편리한 전동, 감성의 수동<br><u>두가지 모두</u> 포기할 수 없다면?</h2>
+           </blockquote>
+           <p><img class="fr-fic fr-dib" data-width="808" data-height="627" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0713/20210713173513354_81.gif"><img class="fr-fic fr-dib" data-width="809" data-height="467" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0712/20210712215329286_57.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <p>주말 느지막이 일어나, <strong>수동 그라인더에서 갈려 나오는 원두의 향과 함께 여유를 즐겨보세요</strong>, 방안 가득 차오르는 은은한 향기, &nbsp;그 무엇보다 바꾸기 아까운 소중한 순간을 위해 만들었습니다. &nbsp;</p>
+           <p><img data-width="808" data-height="2848" class="fr-fil fr-dib" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0430/20210430115455702_93.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <p><img class="fr-fic fr-dib" data-width="808" data-height="410" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0713/20210713131432231_15.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <blockquote class="type-line">
+            <h3>캠핑중 그라인더<br>배터리가 멈춘다면?</h3>
+           </blockquote>
+           <p>그럴 땐<strong><u>&nbsp;함께 제공되는 수동모듈을 사용해보세요!&nbsp;</u></strong>전동의 편리함과 수동의 감성을 한 세트로 파우치에 갖고 다니면서 상황에 대처할 수 있습니다.</p>
+           <p><img data-width="808" data-height="1119" class="fr-fil fr-dib" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0707/20210707143450510_42.gif"></p>
+           <p><img data-width="600" data-height="338" class="fr-fic fr-dib" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0506/20210506201450949_14.gif"></p>
+           <h5>전동에서 <strong>핸드밀 감성</strong>으로 간편하게!</h5>
+           <blockquote class="type-line">
+            <p><strong>월넛 손잡이</strong></p>
+           </blockquote>
+           <p>월넛(호두나무)를 깍아 제작한 우드 손잡이 입니다. <strong>원두 분쇄 시 안정적인 그립감을 제공합니다.&nbsp;</strong></p>
+           <p><img class="fr-fic fr-dib" data-width="809" data-height="831" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0510/20210510100902610_41.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <p><img class="fr-fic fr-dib" data-width="808" data-height="373" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0707/20210707215142345_93.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <p><br></p>
+           <blockquote class="type-line">
+            <p><strong>패키지</strong></p>
+           </blockquote>
+           <p><img class="fr-fic fr-dib" data-width="808" data-height="539" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0713/20210713140903521_84.jpg/wadiz/format/jpg/quality/80/optimize"><img class="fr-fic fr-dib" data-width="808" data-height="444" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0713/20210713140740953_80.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <p><br></p>
+           <blockquote class="type-line">
+            <p><strong>구성품</strong></p>
+           </blockquote>
+           <p>레가토 그라인더1대 + 수동핸들 1개 + 금속통1개 + 유리통1개 + 청소솔 2종 + 파우치 + 충전선 + 회전축 여분 + 원두50g + 커피필터(20매)</p>
+           <p><strong><img class="fr-fic fr-dib" data-width="808" data-height="538" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0713/20210713133545808_72.jpg/wadiz/format/jpg/quality/80/optimize"></strong><img class="fr-fic fr-dib" data-width="808" data-height="344" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0714/20210714144349660_90.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <blockquote class="type-line">
+            <p><strong>제품 스펙</strong></p>
+           </blockquote>
+           <p><strong><img class="fr-fic fr-dib" data-width="809" data-height="588" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0511/20210511110829669_52.jpg/wadiz/format/jpg/quality/80/optimize"></strong><br></p>
+           <p><br></p>
+           <blockquote class="type-line">
+            <h3>디자인, 설계, 개발까지 한국의 원천기술로 제작된 레가토 그라인더</h3>
+           </blockquote>
+           <p><img class="fr-fic fr-dib" data-width="809" data-height="727" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0730/20210730191529350_5.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <h5>이 내용은 2021.07.30에 추가되었습니다 </h5>
+           <h5><strong><img class="fr-fic fr-dib" data-width="809" data-height="512" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0715/20210715102837151_73.png/wadiz/format/jpg/quality/80/optimize"></strong><br></h5>
+           <p><img class="fr-fic fr-dib" data-width="808" data-height="932" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0713/20210713153142804_22.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <p><br></p>
+           <p><img class="fr-fic fr-dib" data-width="808" data-height="2839" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0714/20210714143927254_22.jpg/wadiz/format/jpg/quality/80/optimize"><img class="fr-fic fr-dib" data-width="808" data-height="2747" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0714/20210714143940022_30.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <p><img class="fr-fic fr-dib" data-width="808" data-height="1899" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0714/20210714144000264_13.jpg/wadiz/format/jpg/quality/80/optimize"><img class="fr-fic fr-dib" data-width="809" data-height="4792" data-src="https://cdn.wadiz.kr/ft/images/green001/2021/0511/20210511163331127_71.jpg/wadiz/format/jpg/quality/80/optimize"></p>
+           <p><strong>안녕하세요! (주)제이펀 입니다.<br>뻔한 건 싫다! FUN하게 즐기자!</strong></p>
+           <p>저희 제이펀은 소형 전기 전자제품에 필요한 정교한 열 제어와 화학소재 응용부문에 전문화된 기술벤처 회사로, 전기그릴을 비롯하여 커피로스터기, 커피그라인더, 헤어 및 뷰티 디바이스 등이 주요 제품군 입니다. 서포터님의 머리 속에 잠자고 있는 새롭고 재미있는 아이디어를 현실로 구현하기 위해 항상 고민하며, 동시에 자연과 사람에 도움이 되는 착한 제품을 만들고자 늘 노력하고 있습니다. 감사합니다.</p>
+           <p><br></p>
+           <ul>
+            <li><p><strong>&nbsp;프로젝트 진행 동기 및 목적</strong></p>15년 동안 가정용 로스터기 개발을 위해 생산지 별 원두의 특성과 로스팅 온도의 상관관계를 연구하였습니다. 이를 통해 얻은 노하우로 커피에 대해 잘 알게 되었다고 자신만만해질 즈음에 드립 할 때마다 커피맛이 달라지는 경험을 하게 되었습니다. 같은 원두인데 왜 저 사람과 나의 커피 맛이 다를까? 어제 내린 커피는 분명 맛있었는데, 오늘 내린 커피는 사약처럼 쓰기만 할까? 이 고민은<strong>&nbsp; &nbsp;‘<u>나 같은 초보자도</u> 꾸준히 맛있는 커피를 내릴 수 있을까?’&nbsp;</strong>로 발전해 그라인더 개발을 시작하게 되었습니다<br><br></li>
+            <li><p><strong>펀딩 종료 후 계획이 어떻게 되나요?</strong></p>서포터님들의 펀딩금은 '제이펀'에서 더욱 좋은 품질과 만족스러운 제품을 연구개발하고, 고객편의를 위한 사후 서비스 개선 등을 위해 투자하도록 하겠습니다.<br><br></li>
+           </ul>
+           <p><strong>프로젝트 일정</strong></p>
+           <ul>
+            <li>펀딩 마감일 : 8월 23일 &nbsp;</li>
+            <li>배송시작 : 9월 1일부터 순차적 배송</li>
+            <li>(종료 이후 배송 소식은 새소식으로 안내해드리겠습니다.)<br><br></li>
+           </ul>
+           <p><strong>배송 안내</strong></p>
+           <p>1. 택배사 : CJ 대한통운<br>2. 배송비 : 3,000원 (도서산간 추가 배송비 없음)<br>3. 하루 최대 배송 가능 개수 : 100개<br>4. 고객센터 : 010 - 8472 - 8606<br>상담 가능 시간 : 월요일 ~ 금요일 (공휴일 제외) 오전 10시부터 ~ 오후 6시까지<br>5. 배송 시 포장상태 : 에어캡 + 박스포장</p>
+           <p><br></p>
+           <p><strong>FAQ</strong></p>
+           <p><strong>Q. &nbsp;커피를 잘 모르는 초보자도 사용 가능한가요?</strong><br>A. 그럼요! 원두를 넣고, 원하는 굵기에 맞춰 클릭수를 조절한 후, 버튼만 누르면 알아서 원두가 갈려져 나오는 심플한 시스템으로 누구나 쉽게 사용하실 수 있습니다. 업계 최초 양방향 분쇄 날을 도입하여 원두 끼임으로 그라인더를 분해해야 할 일도 없고, 분리세척도 간편! 이제 막 커피에 입문하시는 초보자 분들에게도 추천드립니다.</p>
+           <p><br><br><strong>Q. 휴대용 그라인더라는데, 가지고 다니다 보면 상처가 나거나 유리 분쇄통이 깨지지 않나요?</strong><br>A. 구성품 중에는 전용 파우치와 금속통이 포함되어 있습니다. 파우치는 그라인더가 쏙 들어가는 사이즈의 보드라운 재질로 제작 되었습니다. 본체에 상처가 나거나 유리 분쇄통이 깨지지 않도록 지켜줄 거예요.</p>
+           <p><br></p>
+           <p><strong>Q. &nbsp;세척 과 보관은 어떻게 해야하나요?</strong><br>A. &nbsp;분쇄 정밀도를 위해 분쇄날을 금속으로 제작 했습니다. 제품을 오래사용하기 위해 물 세척 하지마시고 구성품으로 드린 청소솔과 부드러운 천을 이용해 관리 부탁드립니다</p>
+           <p><br></p>
+           <p><strong>Q. 에스프레소 추출도 가능한가요?</strong><br>A. 가능합니다! 개인마다 취향차이는 조금씩 있겠으나, 기본적인 레시피는.<br>6클릭: 에스프레소 / 11클릭: 더치커피 / 15클릭: 핸드드립 / 21클릭: 프렌치프레스<br>입니다. 딸깍딸깍 돌리기만 하면 원두 굵기가 조절되는 간편한 레가토 그라인더로 나만의 레시피를 만들어 보세요.</p>
+           <p><br></p> 
+          </div> 
+         </div> <!-- E : 프로젝트 내용 --> <!-- 공간 노출 배너 --> <!-- 공간 노출 배너 --> 
+        </div> 
+       </div> <!-- E : campaign 컨텐츠 --> 
+       <div class="banner-section-RB1"></div> 
+       <input type="hidden" id="movieembed" value=""> 
+      </section> 
+     </div> 
+    </div> <!-- E : 탭 주요 콘텐츠 --> 
+   </div> 
+  </div> <!-- E : 캠페인 정보 --> 
+  <div class="banner-section-RB3"></div> 
+ </div>
+ 
